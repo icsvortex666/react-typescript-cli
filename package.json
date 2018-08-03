@@ -1,0 +1,16 @@
+{
+  "name": "react-cli",
+  "version": "0.0.1",
+  "description": "CLI tool for React with Typescript",
+  "files": "index.js",
+  "repository": "https://github.com/pgvlas/react-cli",
+  "author": "Patryk Gułaś",
+  "license": "MIT",
+  "bin": {
+    "rt": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "fs-extra": "^2.0.0"
+  }
+}
