@@ -1,5 +1,5 @@
 {
-  "name": "react-cli",
+  "name": "react-typescript-cli",
   "version": "0.0.1",
   "description": "CLI tool for React with Typescript",
   "files": "index.js",
