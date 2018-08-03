@@ -10,7 +10,7 @@ Run
 
 ## Options
 
-Create component with styles (support for Material UI
+Create component with styles (support for Material UI)
 
 ```-s --styles```
 
