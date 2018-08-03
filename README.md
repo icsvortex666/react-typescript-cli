@@ -18,7 +18,7 @@ Create component with connect
 
 ```-c --connect```
 
-###TODO
+## TODO
 
 - Support for functional components
 - Creating components from src directory
