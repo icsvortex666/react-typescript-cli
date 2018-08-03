@@ -33,4 +33,3 @@ Create component with connect
 ## TODO
 
 - Support for functional components
-- Creating components from src directory
