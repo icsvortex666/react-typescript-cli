@@ -2,6 +2,8 @@
 
 CLI tool for React with Typescript
 
+[![npm](https://img.shields.io/npm/dm/localeval.svg)](https://www.npmjs.com/package/react-typescript-cli)
+
 ## Install
 
 Run
