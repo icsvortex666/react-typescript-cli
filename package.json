@@ -1,6 +1,6 @@
 {
   "name": "react-typescript-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CLI tool for React with Typescript",
   "files": "index.js",
   "repository": "https://github.com/pgvlas/react-cli",
