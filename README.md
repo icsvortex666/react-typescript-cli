@@ -6,9 +6,13 @@ CLI tool for React with Typescript
 
 ## Install
 
-Run
+Using npm:
 
-```npm install -g generate-react-component```
+```npm install -g react-typescript-cli```
+
+Using yarn:
+
+```yarn global add react-typescript-cli```
 
 ## Creating component
 
