@@ -12,5 +12,6 @@
   "dependencies": {
     "commander": "^2.9.0",
     "fs-extra": "^2.0.0"
-  }
+  },
+  "keywords": ["react", "typescript", "cli", "components", "generate", "styles", "material"]
 }
