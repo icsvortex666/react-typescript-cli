@@ -1,0 +1,61 @@
+{{#if withConnect}}
+import { connect, Dispatch } from 'react-redux';
+{{/if}}
+{{#if withStyles}}
+import { withStyles } from '@material-ui/core';
+{{/if}}
+{{#if withStylesOrConnect}}
+
+{{/if}}
+{{#if withConnect}}
+import { RootState } from 'store/rootReducer';
+import {
+  DispatchToPropsInterface,
+  StateToPropsInterface
+} from './{{#capitalize}}{{name}}{{/capitalize}}.interfaces';
+{{/if}}
+{{#if withStyles}}import { styles } from './{{#capitalize}}{{name}}{{/capitalize}}.styles;{{/if}}
+import {{#capitalize}}{{name}}{{/capitalize}} from './{{#capitalize}}{{name}}{{/capitalize}};
+
+{{#if withConnect}}
+const mapStateToProps = (state: RootState) => ({
+  // example: getExample(state)
+});
+
+const mapDispatchToProps = (dispatch: Dispatch<{}>) => ({
+  // example: (payload: ExampleActionPayload) => dispatch(exampleAction(payload))
+});
+
+{{/if}}
+{{#if withStylesAndConnect}}
+const {{#capitalize}}{{name}}{{/capitalize}}Container =
+  connect<StateToPropsInterface,
+    DispatchToPropsInterface>(mapStateToProps, mapDispatchToProps)(
+    withStyles(styles)(
+      {{#capitalize}}{{name}}{{/capitalize}}
+    )
+  )
+;
+{{/if}}
+{{#if withOnlyConnect}}
+const {{#capitalize}}{{name}}{{/capitalize}}Container =
+  connect<StateToPropsInterface,
+    DispatchToPropsInterface>(mapStateToProps, mapDispatchToProps)(
+    {{#capitalize}}{{name}}{{/capitalize}}
+  )
+;
+{{/if}}
+{{#if withOnlyStyles}}
+const {{#capitalize}}{{name}}{{/capitalize}}Container =
+  withStyles(styles)(
+    {{#capitalize}}{{name}}{{/capitalize}}
+  )
+;
+{{/if}}
+{{#if withoutConnectAndStyles}}
+const ${utils.capitalize(componentName)}Container =
+  {{#capitalize}}{{name}}{{/capitalize}}
+;
+{{/if}}
+
+export default {{#capitalize}}{{name}}{{/capitalize}}Container;

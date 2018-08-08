@@ -1,0 +1,31 @@
+{{#if withStyles}}
+import { WithStyles } from '@material-ui/core';
+
+import { styles } from './{{#capitalize}}{{name}}{{/capitalize}}.styles;
+
+{{/if}}
+interface {{#capitalize}}{{name}}{{/capitalize}}OwnProps {
+  // example: string;
+}
+
+{{#if withConnect}}
+export interface StateToPropsInterface {
+  // example: string;
+}
+
+export interface DispatchToPropsInterface {
+  // example: (payload: ExampleActionPayload) => void;
+}
+
+{{/if}}
+export type {{#capitalize}}{{name}}{{/capitalize}}Props =
+{{#if withStyles}}
+  WithStyles<typeof styles> &
+{{/if}}
+{{#if withConnect}}
+  StateToPropsInterface &
+{{/if}}
+{{#if withConnect}}
+  DispatchToPropsInterface &
+{{/if}}
+  {{#capitalize}}{{name}}{{/capitalize}}OwnProps;

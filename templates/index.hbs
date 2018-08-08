@@ -1,0 +1,5 @@
+{{#if withContainer}}
+export { default as {{#capitalize}}{{name}}{{/capitalize}} } from './{{#capitalize}}{{name}}{{/capitalize}}.container';
+{{else}}
+export { default as {{#capitalize}}{{name}}{{/capitalize}} } from './{{#capitalize}}{{name}}{{/capitalize}}';
+{{/if}}

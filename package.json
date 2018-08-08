@@ -11,7 +11,17 @@
   },
   "dependencies": {
     "commander": "^2.9.0",
-    "fs-extra": "^2.0.0"
+    "fs-extra": "^2.0.0",
+    "handlebars": "^4.0.11"
   },
-  "keywords": ["react", "typescript", "cli", "components", "generate", "styles", "material"]
+  "keywords": [
+    "react",
+    "typescript",
+    "cli",
+    "components",
+    "generate",
+    "styles",
+    "material"
+  ],
+  "devDependencies": {}
 }
