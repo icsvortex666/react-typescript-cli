@@ -8,7 +8,7 @@ CLI tool for React with Typescript
 
 * generating class components
 * support for connect
-* support for withStyles (from [![](https://github.com/mui-org/material-ui)](Material UI))
+* support for withStyles (from [Material UI](https://github.com/mui-org/material-ui))
 
 ## Install
 
