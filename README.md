@@ -4,6 +4,12 @@ CLI tool for React with Typescript
 
 [![npm](https://img.shields.io/npm/dm/localeval.svg)](https://www.npmjs.com/package/react-typescript-cli)
 
+## Features
+
+* generating class components
+* support for connect
+* support for withStyles (from [![](https://github.com/mui-org/material-ui)](Material UI))
+
 ## Install
 
 Using npm:
@@ -32,4 +38,14 @@ Create component with connect
 
 ## TODO
 
-- Support for functional components
+- Support for stateless components
+- Generic algorithm for HOCs
+- Wiki for style guide
+- Generating component with routing
+- Generating views
+- Generating services
+- Support for redux
+
+## Contributing
+
+All contributors are welcomed. It's fresh project and our goal is to define good way of creating React with Typescript components and make well CLI for it.
