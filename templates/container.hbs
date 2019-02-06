@@ -14,8 +14,8 @@ import {
   StateToPropsInterface
 } from './{{#capitalize}}{{name}}{{/capitalize}}.interfaces';
 {{/if}}
-{{#if withStyles}}import { styles } from './{{#capitalize}}{{name}}{{/capitalize}}.styles;{{/if}}
-import {{#capitalize}}{{name}}{{/capitalize}} from './{{#capitalize}}{{name}}{{/capitalize}};
+{{#if withStyles}}import { styles } from './{{#capitalize}}{{name}}{{/capitalize}}.styles';{{/if}}
+import {{#capitalize}}{{name}}{{/capitalize}} from './{{#capitalize}}{{name}}{{/capitalize}}';
 
 {{#if withConnect}}
 const mapStateToProps = (state: RootState) => ({
